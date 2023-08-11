@@ -13,6 +13,7 @@ body {
 .card-container {
   max-width: 900px;
   margin: 0 auto;
+ 
 }
 
 .c-card {
@@ -20,6 +21,7 @@ body {
   width: 100%;
   max-width: 350px;
   margin: 20px;
+  
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: left;
@@ -41,7 +43,9 @@ body {
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
+  text-align: center;
   padding: 0;
+  justify-content: center;
   text-transform: uppercase;
 }
 .c-card__subtitle {
@@ -146,4 +150,31 @@ body {
         background: #fff;
         box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
     }
+}
+
+
+
+.icons {
+ 
+  margin: 0px 30px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.icons button {
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  font-size: 1em;
+}
+
+ion-icon:hover {
+  color: #0c265f;
+  transition: 0.5s;
+}
+.icons a{
+  color:#000;
 }
