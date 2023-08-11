@@ -27,6 +27,7 @@ body {
 
 .background{
   z-index: -1;
+  color: #eee;
 }
 .c-card {
   display: inline-block;
