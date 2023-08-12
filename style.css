@@ -1,9 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@font-face {
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Regular"),
+    url("./assets/fonts/myriadpro/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold"),
+    url("./assets/fonts/myriadpro/MYRIADPRO-BOLD.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica"),
+    url("./assets/fonts/Helvetica-Font/Helvetica.ttf") format("ttf");
+}
 
 
 .c-card * {
   display: block;
   box-sizing: border-box;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+ 
+  
 }
 
 h1{
@@ -11,10 +37,12 @@ h1{
   font-size: 40px;
   font-style: normal;
   color:white;
+
+
 }
 
 body {
-  font-family: "Amaranth", sans-serif;
+  /* font-family: "Amaranth", sans-serif; */
   text-align: center;
   background-color: #edf3f8;
 }
@@ -22,8 +50,15 @@ body {
 .card-container {
   max-width: 1350px;
   margin: 0 auto;
+  
+ 
  
 }
+
+.c-cardd{
+  display:none;
+}
+
 
 
 .c-card {
@@ -37,6 +72,10 @@ body {
   text-align: left;
   background: #fff;
   box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius:20px ;
+  border-bottom-right-radius: 20px;
 }
 .c-card:hover {
   transform: translateY(-5px);
@@ -44,6 +83,7 @@ body {
 }
 .c-card__image {
   max-width: 100%;
+  
 }
 .c-card__body {
   padding: 20px;
@@ -240,14 +280,14 @@ ion-icon:hover {
 
 /*navbar start*/
 
+/*navbar start*/
+
 .nav-container {
   max-width: 1600px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-weight: bold;
 }
 
 .nav-active {
@@ -263,7 +303,8 @@ nav {
   z-index: 1000;
   background-color: transparent;
   padding: 16px 32px 40px 32px;
-  font-family: "Myriad Pro Regular", serif;
+  font-family: "Myriad Pro Regular", 
+  serif ;
   font-size: 1.4rem;
   transition: 0.3s ease-in-out;
 }
@@ -325,11 +366,12 @@ nav {
 }
 
 .menu a {
-  color: var(--light);
+  color: white;
   margin: 0 0px;
   text-align: center;
   width: fit-content;
   text-decoration: none;
+  font-family: "Myriad Pro Regular" !important;
   transition: 0.4s;
   padding: 12px 0px 6px 0px;
   border-bottom: transparent solid 2px;
@@ -340,7 +382,6 @@ nav {
   margin: auto;
   text-align: center;
 }
-
 
 .menu a.is-active,
 .menu a:hover {
@@ -387,27 +428,19 @@ nav {
 }
 
 @media (min-width: 1300px) {
-
-  .image img {
-    height: 10vw;
-    width: 10vw;
-  }
-
   .mobile-menu,
   .hamburger {
     display: none;
   }
-
   .menu {
     display: flex;
   }
-
   nav {
     padding: 16px 32px 20px 32px;
   }
 }
 
-
+/*navbar end*/
 
 /*navbar end*/
 
